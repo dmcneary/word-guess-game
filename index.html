@@ -7,7 +7,6 @@
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css"><!--STILL NEED TO INIT RESET.CSS IN ASSETS DIR-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <script src="assets/javascript/game.js"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -25,17 +24,20 @@
                         <p>Press any key to start!</p>                
                     </div>
                     <div class="counters">
-                        <h4>Wins: <span id="winsCounter"></span></h4>
-                        <h4>Losses: <span id="lossesCounter"></span></h4>
+                        <h4>Wins: <span id="winscounter"></span></h4>
+                        <h4>Losses: <span id="lossescounter"></span></h4>
                     </div>
                     <div id="game">
-                        <img id="gameImg" src="assets/images/anglerfish.jpg">
-                        <p id="computerGuess"></p>
-                        <p>Guesses remaining: <span id="guessesLeft"></span></p>
+                        <img id="gameimg" src="assets/images/anglerfish.jpg">
+                        <p id="computerpick"></p>
+                        <p>Letters used: <span id="wrongletters"></span></p>
+                        <p>Guesses remaining: <span id="guessescounter"></span></p>
                     </div>
                 </main>
             </div>
         </div>
     </div>
+
+    <script src="assets/javascript/game.js"></script>
 </body>
 </html>
