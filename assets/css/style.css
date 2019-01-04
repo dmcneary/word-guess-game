@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Chelsea+Market');
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2em;
+    color: blanchedalmond;
+    background-color: midnightblue;
+}
+
+.wrapper {
+    margin: 0;
+    padding: 20px; 
+}
+
+.logo {
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
+
+.logo img {
+    height: 200px;
+}
+
+.logo h1, .instructions h3 {
+        font-family: "Chelsea Market", cursive;
+}
+
+.container {
+    border: 5px white dashed;
+    text-align: center;
+}
+
+.console {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#gameImg {
+    max-width: 350px;
+}
