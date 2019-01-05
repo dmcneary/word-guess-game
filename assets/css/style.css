@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Chelsea+Market');
 
 body {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Chelsea Market", cursive;
     font-size: 1.2em;
     color: blanchedalmond;
     background-color: midnightblue;
@@ -12,28 +12,30 @@ body {
     padding: 20px; 
 }
 
-.logo {
+#logo {
     margin-left: auto;
     margin-right: auto;
-    width: 300px;
-}
-
-.logo img {
-    height: 200px;
-}
-
-.logo h1, .instructions h3 {
-        font-family: "Chelsea Market", cursive;
+    max-width: 300px;
+    opacity: 0.7;
 }
 
 .container {
-    border: 5px white dashed;
     text-align: center;
 }
 
-.console {
+.instructions, .counters {
+    border: 6px white dashed;
+    margin-top: 3px;
+    margin-bottom: 3px; 
+}
+
+.center {
     margin-left: auto;
     margin-right: auto;
+}
+
+.counters h4 {
+    display: inline;
 }
 
 #gameimg {

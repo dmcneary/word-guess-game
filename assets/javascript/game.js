@@ -8,6 +8,13 @@ var wrongLetters = [];
 var wins = 0;
 var losses = 0;
 var guessesRemain = 8;
+//logo mouseover effect
+var wordGuessLogo = document.getElementById("logo");
+
+wordGuessLogo.onmouseover = function logoAudio() {
+    var audio = document.getElementById("eeeeeee");
+    audio.play();
+}
 
 //set up the game
 function gameStart() {
@@ -31,7 +38,7 @@ function gameStart() {
 
     //Inject that array into the "console" container
     document.getElementById("computerpick").innerHTML = " " + charSpaces;
-};
+}
 
 //re-initialize vars after game ends  - will be called during win/loss function
 function gameInit() {
@@ -39,7 +46,7 @@ function gameInit() {
     wrongLetters = [];
     charSpaces = [];
     gameStart();
-};
+}
 
 //changes image depending on animal pick - will be called during win/loss function
 function imgSwap() {
@@ -60,8 +67,8 @@ function imgSwap() {
     }
     else if (animalPick == animals[5]) {
         document.getElementById("gameimg").src = "assets/images/tuna.jpg"
-    };
-};
+    }
+}
 
 //verify player entry is in word
 function verify(entry) {
@@ -69,8 +76,8 @@ function verify(entry) {
     for (var i = 0; i < charNumber; i++) {
         if (animalPick[i] == entry) {
             entryIsInWord = true;
-        };
-    };
+        }
+    }
 
     if (entryIsInWord) {
         for (var i = 0; i < charNumber; i++) {
@@ -82,10 +89,10 @@ function verify(entry) {
     else {
         wrongLetters.push(entry);
         guessesRemain--;
-    };
+    }
     //update html with any correct/incorrect letters or reduce guesses
     console.log(charSpaces);
-};
+}
 
 //check to see if player has won or lost
 function winnerLoser () {
@@ -102,10 +109,10 @@ function winnerLoser () {
         alert("Sorry! You Lost!");
         gameInit();
         document.getElementById("lossescounter").innerHTML = losses;//inject losses variable into html
-    };
+    }
     document.getElementById("computerpick").innerHTML = charSpaces;
     document.getElementById("guessescounter").innerHTML = guessesRemain;
-};
+}
 
 //call em up!
 gameStart();
