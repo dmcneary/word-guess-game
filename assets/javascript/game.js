@@ -42,6 +42,7 @@ function gameStart() {
 
 //re-initialize vars after game ends  - will be called during win/loss function
 function gameInit() {
+    console.log("||| SESSION STATS ||| WINS: " + wins + " ||| LOSSES: " + losses + " |||");
     guessesRemain = 8; 
     wrongLetters = [];
     charSpaces = [];
@@ -90,8 +91,6 @@ function verify(entry) {
         wrongLetters.push(entry);
         guessesRemain--;
     }
-    //update html with any correct/incorrect letters or reduce guesses
-    console.log(charSpaces);
 }
 
 //check to see if player has won or lost
