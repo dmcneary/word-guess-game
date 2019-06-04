@@ -30,12 +30,6 @@ function gameStart() {
         charSpaces.push("_");
     };
 
-    //console logging 
-    console.log(animalPick);
-    console.log(animalLetters);
-    console.log(charNumber);
-    console.log(charSpaces);
-
     //Inject that array into the "console" container
     document.getElementById("computerpick").innerHTML = " " + charSpaces;
 }
