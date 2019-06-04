@@ -9,6 +9,6 @@ Winner!
 ![Won the game](Images/screen2.PNG)
 
 Loser!
-![Lost the game](Images/scree3.PNG)
+![Lost the game](Images/screen3.PNG)
 
 This app uses HTML5, CSS3, Vanilla JS & Bootstrap 4 for mobile responsiveness
